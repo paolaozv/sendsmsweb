@@ -17,3 +17,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.post('/', (req, res) => {
+  res.send(req.body);
+  console.log(req.body);
+  let toNumber = req.body.number;
+  let text = req.body.text;
+
+ 
+});
